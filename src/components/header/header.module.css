@@ -1,0 +1,10 @@
+div,
+h1 {
+  text-transform: uppercase;
+}
+
+div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
