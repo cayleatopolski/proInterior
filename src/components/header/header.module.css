@@ -1,9 +1,8 @@
-div,
-h1 {
+.title {
   text-transform: uppercase;
 }
 
-div {
+.headerWrapper {
   width: 100vw;
   display: flex;
   justify-content: center;
