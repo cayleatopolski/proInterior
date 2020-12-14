@@ -3,9 +3,9 @@ import styles from './header.module.css';
 
 const Header = () => {
   return (
-    <div>
+    <div className={styles.headerWrapper}>
       <h1 className={styles.title}>Interior Styling</h1>
-      <button className={styles.headerWrapper}>Our Projects</button>
+      <button>Our Projects</button>
     </div>
   );
 };
