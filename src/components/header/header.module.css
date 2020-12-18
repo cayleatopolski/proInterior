@@ -1,10 +1,36 @@
-div,
-h1 {
-  text-transform: uppercase;
+.imageWrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 60vh;
+  background-image: url(../../../public/plants.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.31);
 }
 
-div {
-  width: 100vw;
+.contentWrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 80px 0 110px 0;
+}
+
+.headerButton {
+  background: #000;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 70px;
+  font-size: 1.5em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

@@ -6,11 +6,12 @@ header {
   background: #f2f2f2;
 }
 
-nav {
+.navWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
+  margin: 0 5% 50px 5%;
 }
 
 img {
@@ -26,11 +27,11 @@ img {
   justify-content: space-around;
 }
 
-.navList li {
+.navItem {
   display: inline-block;
 }
 
-a {
+.a {
   text-decoration: none;
   color: #000;
 }

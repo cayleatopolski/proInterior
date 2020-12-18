@@ -1,31 +1,41 @@
 import React from 'react';
-import './nav.module.css';
+import styles from './nav.module.css';
 
 const Nav = () => {
   return (
     <header>
-      <nav>
+      <nav className={styles.navWrapper}>
         <img alt='the company logo' src='/logo.png' />
-        <ul className='navList'>
-          <span className='bold'>
-            <li className='navItem'>
-              <a href='#'>Homepage</a>
+        <ul className={styles.navList}>
+          <span className={styles.bold}>
+            <li className={styles.navItem}>
+              <a className={styles.a} href='#'>
+                Homepage
+              </a>
             </li>
           </span>
-          <li className='navItem'>
-            <a href='#'>Portfolio</a>
+          <li className={styles.navItem}>
+            <a className={styles.a} href='#'>
+              Portfolio
+            </a>
           </li>
-          <li className='navItem'>
-            <a href='#'>Projects</a>
+          <li className={styles.navItem}>
+            <a className={styles.a} href='#'>
+              Projects
+            </a>
           </li>
-          <li className='navItem'>
-            <a href='#'>Blog</a>
+          <li className={styles.navItem}>
+            <a className={styles.a} href='#'>
+              Blog
+            </a>
           </li>
-          <li className='navItem'>
-            <a href='#'>Contact</a>
+          <li className={styles.navItem}>
+            <a className={styles.a} href='#'>
+              Contact
+            </a>
           </li>
         </ul>
-        <button className='navButton'>Place A Call</button>
+        <button className={styles.navButton}>Place A Call</button>
       </nav>
     </header>
   );

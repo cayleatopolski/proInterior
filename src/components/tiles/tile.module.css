@@ -1,0 +1,60 @@
+.tileWrapper {
+  margin: 0 5%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.gridItem {
+  box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.31);
+  justify-self: center;
+  /* may be justify self: stretch for image */
+  position: relative;
+}
+
+.gridItem::after {
+  content: '';
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5) 15%,
+    rgba(255, 255, 255, 0) 58%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.tileImg {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 25px;
+  background: transparent;
+  color: #000;
+  font-size: 28px;
+  width: 35%;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
