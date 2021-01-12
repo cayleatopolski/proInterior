@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialIcons from './SocialIcons';
+import * as footerLinks from '../../constants/footer_links';
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -12,33 +13,15 @@ const Footer = () => {
           src='/darkLogo.png'
         />
         <ul className={styles.footerList}>
-          <span className={styles.bold}>
-            <li className={styles.footerItem}>
-              <a className={styles.a} href='#'>
-                Homepage
-              </a>
-            </li>
-          </span>
-          <li className={styles.footerItem}>
-            <a className={styles.a} href='#'>
-              Portfolio
-            </a>
-          </li>
-          <li className={styles.footerItem}>
-            <a className={styles.a} href='#'>
-              Projects
-            </a>
-          </li>
-          <li className={styles.footerItem}>
-            <a className={styles.a} href='#'>
-              Blog
-            </a>
-          </li>
-          <li className={styles.footerItem}>
-            <a className={styles.a} href='#'>
-              Contact
-            </a>
-          </li>
+          {footerLinks.nav_links.map((footerLinks) => {
+            return (
+              <li className={styles.footerItem} key={footerLinks.id}>
+                <a className={styles.a} href={footerLinks.link}>
+                  {footerLinks.title}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <button className={styles.footerButton}>Place A Call</button>
       </div>
