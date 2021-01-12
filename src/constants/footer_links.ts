@@ -1,17 +1,22 @@
 export const nav_links = [
     { title: 'HomePage',
-      link: '\home'
+      link: '/',
+      id: 1
     },
     { title: 'Portfolio',
-      link: '#'
+      link: '#',
+      id: 2
     },
     { title: 'Projects',
-      link: '#'
+      link: '#',
+      id: 3
     },
     { title: 'Blog',
-      link: '#'
+      link: '#',
+      id: 4
     },
     { title: 'Contact',
-      link: '#'
+      link: '#',
+      id: 5
     },
 ]

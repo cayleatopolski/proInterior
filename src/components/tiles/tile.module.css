@@ -19,7 +19,6 @@
 .gridItem {
   box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.31);
   justify-self: center;
-  /* may be justify self: stretch for image */
   position: relative;
 }
 
@@ -63,4 +62,10 @@
 .button:hover {
   background: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

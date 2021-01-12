@@ -33,7 +33,11 @@ footer {
   color: #fff;
 }
 
-.bold {
+.a:hover {
+  text-decoration: underline;
+}
+
+li:first-child {
   font-weight: 700;
   color: #fff;
 }
